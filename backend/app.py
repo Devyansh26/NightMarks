@@ -34,6 +34,9 @@ def home():
     return "welcome to bookmark"
 
 
+print("DB URL:", os.getenv("DATABASE_URL"))
+print("SQLALCHEMY_DATABASE_URI:", app.config.get("SQLALCHEMY_DATABASE_URI"))
+
 api.add_resource(UserRegisterResource, "/register")
 api.add_resource(UserLoginResource, "/login")
 api.add_resource(BookmarkSaveResource, "/save_bookmark")
