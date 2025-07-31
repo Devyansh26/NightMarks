@@ -32,7 +32,7 @@ export default function HomePage() {
 
 
   if (loading) {
-    return <div className="min-h-screen bg-gray-900 py-10"><div className="text-white text-center mt-10">Loading profile...</div></div>;
+    return <div className="min-h-screen bg-gray-900 py-10"><div className="text-white text-center mt-10">Loading Bookmarks...</div></div>;
   }
 
   const handleDelete = (id) => {

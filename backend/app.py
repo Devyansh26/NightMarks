@@ -10,6 +10,8 @@ from flask_jwt_extended import jwt_required, JWTManager
 from routes import BookmarkListResource, BookmarkSaveResource,BookmarkSearchResource,BookmarkDetailResource,ProfileResource
 from flask_cors import CORS
 
+from dotenv import load_dotenv
+load_dotenv()
 
 basedir = os.path.abspath(os.path.dirname(__file__))
 
